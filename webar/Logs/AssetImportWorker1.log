@@ -296,3 +296,13 @@ Received Import Request.
 Start importing Assets/DefaultVolumeProfile.asset using Guid(3f9215ea0144899419cfbc0957140d3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '25fc00dc7c7573d5705a16ec80bea8b1') in 0.001151084 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 0.07 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3 unused Assets / (0 B). Loaded Objects now: 725.
+Memory consumption went from 112.8 MB to 112.8 MB.
+Total: 4.863708 ms (FindLiveObjects: 0.029791 ms CreateObjectMapping: 0.003542 ms MarkObjects: 4.816750 ms  DeleteObjects: 0.013292 ms)
+
+Prepare: number of updated asset objects reloaded= 104

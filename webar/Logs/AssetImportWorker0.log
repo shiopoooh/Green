@@ -264,3 +264,45 @@ Received Import Request.
 Start importing Assets/UniversalRenderPipelineGlobalSettings 3.asset using Guid(089887864bb1d4cd697ccca1c5f3143c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f581dbae1d940e17344ed60022e79105') in 0.047556125 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 126
 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 0.08 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4 unused Assets / (34.0 KB). Loaded Objects now: 725.
+Memory consumption went from 113.5 MB to 113.4 MB.
+Total: 4.984125 ms (FindLiveObjects: 0.031291 ms CreateObjectMapping: 0.003792 ms MarkObjects: 4.885458 ms  DeleteObjects: 0.063084 ms)
+
+Prepare: number of updated asset objects reloaded= 104
+========================================================================
+Received Import Request.
+  Time since last request: 105.247342 seconds.
+  path: Assets/Plugins
+  artifactKey: Guid(ce6983225b461d94597ed475f8d49ab9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins using Guid(ce6983225b461d94597ed475f8d49ab9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a4b4e135b76b414260cf6411ed290825') in 0.000465583 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.127854 seconds.
+  path: Assets/_Recovery
+  artifactKey: Guid(9c7c5e9b6f0cc41baa26b23c0f16eaee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Recovery using Guid(9c7c5e9b6f0cc41baa26b23c0f16eaee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '79d7f0d20fce67a4fdc3cfc4ad27c425') in 0.000237458 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.018914 seconds.
+  path: Assets/Settings/Renderer2D.asset
+  artifactKey: Guid(424799608f7334c24bf367e4bbfa7f9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Settings/Renderer2D.asset using Guid(424799608f7334c24bf367e4bbfa7f9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '677eb6173d288224be09e9ffd75cd7cb') in 0.000731334 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005215 seconds.
+  path: Assets/Settings/UniversalRP.asset
+  artifactKey: Guid(681886c5eb7344803b6206f758bf0b1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Settings/UniversalRP.asset using Guid(681886c5eb7344803b6206f758bf0b1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9d65c345b77efd78b07a3c3a1956c5a2') in 0.000530791 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+

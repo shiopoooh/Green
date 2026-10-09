@@ -151,3 +151,4 @@ Cmd: compileSnippet
   error: 1 plat 14 at /Users/abe/GitHub/Green/webar/Library/PackageCache/com.unity.render-pipelines.core@02dfbe8e43de/Editor/Lighting/ProbeVolume/VoxelizeScene.hlsl(352): use of potentially uninitialized variable (rayOrigin) use of potentially uninitialized variable (rayDir)
  ok=1 outsize=28805
 
+
