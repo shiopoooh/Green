@@ -7,9 +7,9 @@ Darwin version:          25.5.0
 Architecture:            arm64
 Running under Rosetta:   NO
 Available memory:        18432 MB
-Date:                    2026-10-09T03:49:04Z
+Date:                    2026-10-09T03:54:12Z
 [Licensing::Module] Trying to connect to existing licensing client channel...
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-abe" at "2026-10-09T03:49:04.904454Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-abe" at "2026-10-09T03:54:12.88157Z"
 
 COMMAND LINE ARGUMENTS:
 /Applications/Unity/Hub/Editor/6000.3.14f1/Unity.app/Contents/MacOS/Unity
@@ -23,7 +23,7 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50848
+50941
 -licensingIpc
 LicenseClient-abe
 -job-worker-count
@@ -72,7 +72,7 @@ Successfully changed project path to: /Users/abe/GitHub/Green/webar
     "memorysetup-temp-allocator-size-gfx=262144"
 Player connection [8527371904]  Target information:
 
-Player connection [8527371904]  * "[IP] 172.19.5.50 [Port] 0 [Flags] 2 [Guid] 3749464930 [EditorId] 3749464930 [Version] 1048832 [Id] OSXEditor(0,abenoMacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+Player connection [8527371904]  * "[IP] 172.19.5.50 [Port] 0 [Flags] 2 [Guid] 612107125 [EditorId] 612107125 [Version] 1048832 [Id] OSXEditor(0,abenoMacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
 
 Player connection [8527371904] Host joined multi-casting on [225.0.0.222:54997]...
 Player connection [8527371904] Host joined alternative multi-casting on [225.0.0.222:34997]...
@@ -87,7 +87,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 4.86 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 15.47 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.3.14f1 (d68c3f99a318)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/6000.3.14f1/Unity.app/Contents/Resources/UnitySubsystems
@@ -108,20 +108,22 @@ Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/6000.3.14f1/Unity.app/Contents/Resources/Scripting/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/6000.3.14f1/Unity.app/Contents/Resources/Scripting/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/6000.3.14f1/Unity.app/Contents/Resources/Scripting/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56202
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56890
 Begin MonoManager ReloadAssembly
-[Licensing::Client] Handshaking with LicensingClient:
-  Version:                 1.18.3+d7ffd15
-  Session Id:              c9c82f357542493fb8c9a47da36bcf60
-  Correlation Id:          3aa6b6a35d2b270deb4b7035b834b0e5
-  External correlation Id: 2463079071696564459
-  Machine Id:              70PzcXXYvKyYMXkgqfMbxHVlMek=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-abe" (connect: 0.00s, validation: 0.00s, handshake: 0.62s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-abe-notifications" at "2026-10-09T03:49:05.520993Z"
-[Licensing::Module] Licensing Background thread has ended after 0.62s
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/6000.3.14f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/6000.3.14f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+[Licensing::Module] Licensing is not yet initialized.
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.3+d7ffd15
+  Session Id:              71fa40d508dd4bdd9481fc24f9d48d33
+  Correlation Id:          3aa6b6a35d2b270deb4b7035b834b0e5
+  External correlation Id: 565040393893995513
+  Machine Id:              70PzcXXYvKyYMXkgqfMbxHVlMek=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-abe" (connect: 0.00s, validation: 0.00s, handshake: 0.67s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-abe-notifications" at "2026-10-09T03:54:13.554712Z"
+[Licensing::Module] Licensing Background thread has ended after 0.67s
+[Licensing::Module] Licensing is initialized (took 0.03s).
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
   Id: 15669157618138-UnityPersXXXX
@@ -129,8 +131,8 @@ Register platform support module: /Applications/Unity/Hub/Editor/6000.3.14f1/Uni
   Type: Assigned
   Expiration: Unlimited
 Register platform support module: /Applications/Unity/Hub/Editor/6000.3.14f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
-Registered in 0.001954 seconds.
-- Loaded All Assemblies, in  0.278 seconds
+Registered in 0.033446 seconds.
+- Loaded All Assemblies, in  0.322 seconds
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 [usbmuxd] Send listen message
@@ -143,9 +145,9 @@ Package Manager log level set to [2]
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.259 seconds
-Domain Reload Profiling: 537ms
-	BeginReloadAssembly (102ms)
+- Finished resetting the current domain, in  0.286 seconds
+Domain Reload Profiling: 608ms
+	BeginReloadAssembly (109ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
@@ -153,24 +155,24 @@ Domain Reload Profiling: 537ms
 		CreateAndSetChildDomain (0ms)
 	RebuildCommonClasses (23ms)
 	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (25ms)
-	LoadAllAssembliesAndSetupDomain (119ms)
-		LoadAssemblies (102ms)
+	initialDomainReloadingComplete (57ms)
+	LoadAllAssembliesAndSetupDomain (123ms)
+		LoadAssemblies (108ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (116ms)
-			TypeCache.Refresh (115ms)
-				TypeCache.ScanAssembly (105ms)
+		AnalyzeDomain (121ms)
+			TypeCache.Refresh (120ms)
+				TypeCache.ScanAssembly (109ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (259ms)
+	FinalizeReload (286ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (228ms)
+		SetupLoadedEditorAssemblies (254ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (66ms)
+			InitializePlatformSupportModulesInManaged (80ms)
 			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (48ms)
-			ProcessInitializeOnLoadAttributes (66ms)
+			BeforeProcessingInitializeOnLoad (53ms)
+			ProcessInitializeOnLoadAttributes (72ms)
 			ProcessInitializeOnLoadMethodAttributes (45ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
@@ -182,53 +184,53 @@ Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
 [Licensing::Client] Successfully resolved entitlement details
-- Loaded All Assemblies, in  0.474 seconds
-Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.532 seconds
+Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
 Native extension for iOS target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.65 ms, found 3 plugins.
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.423 seconds
-Domain Reload Profiling: 898ms
-	BeginReloadAssembly (72ms)
+- Finished resetting the current domain, in  0.460 seconds
+Domain Reload Profiling: 991ms
+	BeginReloadAssembly (79ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (3ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (13ms)
-	RebuildCommonClasses (22ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (17ms)
-	LoadAllAssembliesAndSetupDomain (354ms)
-		LoadAssemblies (228ms)
+		CreateAndSetChildDomain (15ms)
+	RebuildCommonClasses (25ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (19ms)
+	LoadAllAssembliesAndSetupDomain (398ms)
+		LoadAssemblies (257ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (159ms)
-			TypeCache.Refresh (119ms)
-				TypeCache.ScanAssembly (105ms)
-			BuildScriptInfoCaches (32ms)
+		AnalyzeDomain (178ms)
+			TypeCache.Refresh (133ms)
+				TypeCache.ScanAssembly (118ms)
+			BuildScriptInfoCaches (35ms)
 			ResolveRequiredComponents (6ms)
-	FinalizeReload (424ms)
+	FinalizeReload (460ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (361ms)
+		SetupLoadedEditorAssemblies (391ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (8ms)
+			InitializePlatformSupportModulesInManaged (10ms)
 			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (100ms)
-			ProcessInitializeOnLoadAttributes (209ms)
-			ProcessInitializeOnLoadMethodAttributes (40ms)
+			BeforeProcessingInitializeOnLoad (110ms)
+			ProcessInitializeOnLoadAttributes (224ms)
+			ProcessInitializeOnLoadMethodAttributes (42ms)
 			AfterProcessingInitializeOnLoad (1ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (1ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
 WARNING: Shader Unsupported: 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' - All subshaders removed
 WARNING: Shader Did you use #pragma only_renderers and omit this platform?
 WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
@@ -249,84 +251,130 @@ WARNING: Shader Did you use #pragma only_renderers and omit this platform?
 WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
 Launching external process: /Applications/Unity/Hub/Editor/6000.3.14f1/Unity.app/Contents/Helpers/UnityShaderCompiler
 Launched and connected shader compiler UnityShaderCompiler after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.89 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.65 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 46 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7199 unused Assets / (6.9 MB). Loaded Objects now: 7830.
-Memory consumption went from 145.8 MB to 139.0 MB.
-Total: 6.860541 ms (FindLiveObjects: 0.358000 ms CreateObjectMapping: 0.157375 ms MarkObjects: 4.303875 ms  DeleteObjects: 2.041041 ms)
+Unloading 7199 unused Assets / (6.1 MB). Loaded Objects now: 7830.
+Memory consumption went from 146.2 MB to 140.1 MB.
+Total: 6.734917 ms (FindLiveObjects: 0.436625 ms CreateObjectMapping: 0.171792 ms MarkObjects: 4.415667 ms  DeleteObjects: 1.710541 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1765.707989 seconds.
+  Time since last request: 2073.890871 seconds.
+  path: Assets/WebARStamp/Samples
+  artifactKey: Guid(e83b6a1237f78444085153bf3f27fbd2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/WebARStamp/Samples using Guid(e83b6a1237f78444085153bf3f27fbd2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2965e7e3bfd629478ec64a97872d1d21') in 0.018699333 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/WebARStamp/Editor
+  artifactKey: Guid(6886fcd357e73844eb8656457289d34c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/WebARStamp/Editor using Guid(6886fcd357e73844eb8656457289d34c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '897aff338da445b070246b04548ce2a4') in 0.001600291 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/WebGLTemplates/WebARStamp/Overlays
+  artifactKey: Guid(1cb9de800e90c7041a90b8802f605f8c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/WebGLTemplates/WebARStamp/Overlays using Guid(1cb9de800e90c7041a90b8802f605f8c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9be2cc052d405c8123e401199ba1fa28') in 0.001887334 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
   path: Assets/UniversalRenderPipelineGlobalSettings 3.asset
-  artifactKey: Guid(089887864bb1d4cd697ccca1c5f3143c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UniversalRenderPipelineGlobalSettings 3.asset using Guid(089887864bb1d4cd697ccca1c5f3143c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f581dbae1d940e17344ed60022e79105') in 0.047556125 seconds
+  artifactKey: Guid(089887864bb1d4cd697ccca1c5f3143c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UniversalRenderPipelineGlobalSettings 3.asset using Guid(089887864bb1d4cd697ccca1c5f3143c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a6b32c222a179995205fdab43d30ff05') in 0.093436625 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 126
 
 ========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 0.08 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 4 unused Assets / (34.0 KB). Loaded Objects now: 725.
-Memory consumption went from 113.5 MB to 113.4 MB.
-Total: 4.984125 ms (FindLiveObjects: 0.031291 ms CreateObjectMapping: 0.003792 ms MarkObjects: 4.885458 ms  DeleteObjects: 0.063084 ms)
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/_Recovery/0.unity
+  artifactKey: Guid(25bbff03e39204698a8a73a3fb845247) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/_Recovery/0.unity using Guid(25bbff03e39204698a8a73a3fb845247) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ad797751a5343f9b59b35d216ecfb8fe') in 0.002328625 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
-Prepare: number of updated asset objects reloaded= 104
 ========================================================================
 Received Import Request.
-  Time since last request: 105.247342 seconds.
+  Time since last request: 0.000036 seconds.
+  path: Assets/WebARStamp
+  artifactKey: Guid(c429a24b22a00d940974caf038b2b7c9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/WebARStamp using Guid(c429a24b22a00d940974caf038b2b7c9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3c592176fdbf564454cb25e76103c544') in 0.001396875 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/WebGLTemplates/WebARStamp
+  artifactKey: Guid(1e92d1e2e0e12914997b50f5e4f1b2ec) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/WebGLTemplates/WebARStamp using Guid(1e92d1e2e0e12914997b50f5e4f1b2ec) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '729c4af3352790979cca4c77b4c76366') in 0.001461042 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/UniversalRenderPipelineGlobalSettings 1.asset
+  artifactKey: Guid(cf37e8465aa204892910186cfde46670) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UniversalRenderPipelineGlobalSettings 1.asset using Guid(cf37e8465aa204892910186cfde46670) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'dbac2773be4e38f53513bf4bb41224e9') in 0.00193375 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
   path: Assets/Plugins
-  artifactKey: Guid(ce6983225b461d94597ed475f8d49ab9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins using Guid(ce6983225b461d94597ed475f8d49ab9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a4b4e135b76b414260cf6411ed290825') in 0.000465583 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.127854 seconds.
-  path: Assets/_Recovery
-  artifactKey: Guid(9c7c5e9b6f0cc41baa26b23c0f16eaee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Recovery using Guid(9c7c5e9b6f0cc41baa26b23c0f16eaee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '79d7f0d20fce67a4fdc3cfc4ad27c425') in 0.000237458 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.018914 seconds.
-  path: Assets/Settings/Renderer2D.asset
-  artifactKey: Guid(424799608f7334c24bf367e4bbfa7f9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Settings/Renderer2D.asset using Guid(424799608f7334c24bf367e4bbfa7f9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '677eb6173d288224be09e9ffd75cd7cb') in 0.000731334 seconds
+  artifactKey: Guid(ce6983225b461d94597ed475f8d49ab9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Plugins using Guid(ce6983225b461d94597ed475f8d49ab9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6efebfd9bb92b59d89196d9448dd55ea') in 0.001339375 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.005215 seconds.
-  path: Assets/Settings/UniversalRP.asset
-  artifactKey: Guid(681886c5eb7344803b6206f758bf0b1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Settings/UniversalRP.asset using Guid(681886c5eb7344803b6206f758bf0b1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9d65c345b77efd78b07a3c3a1956c5a2') in 0.000530791 seconds
+  Time since last request: 0.000079 seconds.
+  path: Assets/WebARStamp/Markers
+  artifactKey: Guid(8322dceca504171468585cf104d8efa0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/WebARStamp/Markers using Guid(8322dceca504171468585cf104d8efa0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '97bd3d559010c5cf5f97153319bbe148') in 0.001286167 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 13.516379 seconds.
-  path: Assets/Documents/Unity_WebGL_WebAR_StampRally_Template_Implementation.md
-  artifactKey: Guid(dad761c3ab1a5404292961ccf8010841) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Documents/Unity_WebGL_WebAR_StampRally_Template_Implementation.md using Guid(dad761c3ab1a5404292961ccf8010841) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7acb6bb4ee45ae089414003f1e557d27') in 0.000377 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 0.000031 seconds.
+  path: Assets/Documents
+  artifactKey: Guid(59de287b7c095af4591796fc10d1ce06) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Documents using Guid(59de287b7c095af4591796fc10d1ce06) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c058689c44ab012d20f02101a884e0bf') in 0.001447417 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.003041 seconds.
-  path: Assets/Documents/WebAR_StampRally_Student_Guide_GitHub_Pages.html
-  artifactKey: Guid(f10b5d4dea85cf046918c92ccd44c274) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Documents/WebAR_StampRally_Student_Guide_GitHub_Pages.html using Guid(f10b5d4dea85cf046918c92ccd44c274) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4d758126cbf683b6f6fcb5d268479367') in 0.000296833 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 0.000036 seconds.
+  path: Assets/DefaultVolumeProfile.asset
+  artifactKey: Guid(3f9215ea0144899419cfbc0957140d3f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/DefaultVolumeProfile.asset using Guid(3f9215ea0144899419cfbc0957140d3f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '374cc03f556da575a91b7bc72cd8a3d9') in 0.0025995 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.327916 seconds.
-  path: Assets/WebARStamp/Samples/WebARSample.unity
-  artifactKey: Guid(b4e4eea9a546fa240ab9d91b6f093a46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/WebARStamp/Samples/WebARSample.unity using Guid(b4e4eea9a546fa240ab9d91b6f093a46) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '779dd2acdd9cb43b4a795bd47c478838') in 0.000297125 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 0.000044 seconds.
+  path: Assets/WebGLTemplates
+  artifactKey: Guid(27b6b8ecd3f11f04a899510e5057498c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/WebGLTemplates using Guid(27b6b8ecd3f11f04a899510e5057498c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'feb8d765a038e50074113b7c5b59dad1') in 0.001717625 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000083 seconds.
+  path: Assets/Plugins/WebGL
+  artifactKey: Guid(479e6edb1e4ffce4a8cc55fa14f42a32) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Plugins/WebGL using Guid(479e6edb1e4ffce4a8cc55fa14f42a32) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'eb9d426d4ec00112a054a3311421ec1c') in 0.00149075 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets
+  artifactKey: Guid(00000000000000001000000000000000) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets using Guid(00000000000000001000000000000000) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6c8cf219dd98dcf57ed92c9e35c2b1cd') in 0.001532541 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
