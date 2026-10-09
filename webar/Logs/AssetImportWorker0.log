@@ -306,3 +306,27 @@ Received Import Request.
 Start importing Assets/Settings/UniversalRP.asset using Guid(681886c5eb7344803b6206f758bf0b1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9d65c345b77efd78b07a3c3a1956c5a2') in 0.000530791 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
+========================================================================
+Received Import Request.
+  Time since last request: 13.516379 seconds.
+  path: Assets/Documents/Unity_WebGL_WebAR_StampRally_Template_Implementation.md
+  artifactKey: Guid(dad761c3ab1a5404292961ccf8010841) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Documents/Unity_WebGL_WebAR_StampRally_Template_Implementation.md using Guid(dad761c3ab1a5404292961ccf8010841) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7acb6bb4ee45ae089414003f1e557d27') in 0.000377 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003041 seconds.
+  path: Assets/Documents/WebAR_StampRally_Student_Guide_GitHub_Pages.html
+  artifactKey: Guid(f10b5d4dea85cf046918c92ccd44c274) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Documents/WebAR_StampRally_Student_Guide_GitHub_Pages.html using Guid(f10b5d4dea85cf046918c92ccd44c274) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4d758126cbf683b6f6fcb5d268479367') in 0.000296833 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.327916 seconds.
+  path: Assets/WebARStamp/Samples/WebARSample.unity
+  artifactKey: Guid(b4e4eea9a546fa240ab9d91b6f093a46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WebARStamp/Samples/WebARSample.unity using Guid(b4e4eea9a546fa240ab9d91b6f093a46) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '779dd2acdd9cb43b4a795bd47c478838') in 0.000297125 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+

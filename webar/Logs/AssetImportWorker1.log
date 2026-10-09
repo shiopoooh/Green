@@ -306,3 +306,11 @@ Memory consumption went from 112.8 MB to 112.8 MB.
 Total: 4.863708 ms (FindLiveObjects: 0.029791 ms CreateObjectMapping: 0.003542 ms MarkObjects: 4.816750 ms  DeleteObjects: 0.013292 ms)
 
 Prepare: number of updated asset objects reloaded= 104
+========================================================================
+Received Import Request.
+  Time since last request: 122.933635 seconds.
+  path: Assets/Documents/WebAR_StampRally_Student_Guide_GitHub_Pages.md
+  artifactKey: Guid(e6c5d8675f6545b9ae27318209953a21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Documents/WebAR_StampRally_Student_Guide_GitHub_Pages.md using Guid(e6c5d8675f6545b9ae27318209953a21) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0ed2e49cdd7c26d73a890de2ca835769') in 0.000339 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
