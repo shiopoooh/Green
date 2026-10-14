@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>{{{ PRODUCT_NAME }}}</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="Libraries/aframe.min.js"></script>
+    <script src="Libraries/mindar-image-aframe.prod.js?v=webar-fix-3"></script>
+    <script src="webar.js?v=webar-fix-3" defer></script>
+</head>
+
+<body>
+    <div id="unity-container">
+        <canvas id="unity-canvas" tabindex="-1"></canvas>
+        <div id="unity-loading-bar" role="status" aria-live="polite">
+            <div id="unity-progress-bar-empty">
+                <div id="unity-progress-bar-full"></div>
+            </div>
+            <div id="unity-loading-text">Loading...</div>
+        </div>
+        <div id="unity-warning"></div>
+    </div>
+
+    <div id="ar-container" aria-hidden="true">
+        <button id="ar-close-button" type="button" aria-label="WebARを閉じる">&times;</button>
+
+        <a-scene id="ar-scene"
+            mindar-image="imageTargetSrc: targets.mind; autoStart: false; uiLoading: no; uiError: no; uiScanning: no; maxTrack: 1;"
+            embedded color-space="sRGB" renderer="colorManagement: true; physicallyCorrectLights: true; alpha: true;"
+            vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+
+            <a-assets timeout="15000">
+                <img id="overlay-image-0" src="Overlays/spot_01.png" alt="">
+                <img id="overlay-image-1" src="Overlays/spot_02.png" alt="">
+                <img id="overlay-image-2" src="Overlays/spot_03.png" alt="">
+            </a-assets>
+
+            <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+
+            <!-- position="X Y Z": X=左右、Y=上下、Z=マーカー面からの距離 -->
+            <a-entity id="target-0" mindar-image-target="targetIndex: 0">
+                <a-image id="overlay-0" src="#overlay-image-0" position="0 0 0.01" width="0.70" height="0.90"
+                    visible="false" material="transparent: true; alphaTest: 0.01"></a-image>
+            </a-entity>
+
+            <a-entity id="target-1" mindar-image-target="targetIndex: 1">
+                <a-image id="overlay-1" src="#overlay-image-1" position="0 0 0.01" width="0.70" height="0.90"
+                    visible="false" material="transparent: true; alphaTest: 0.01"></a-image>
+            </a-entity>
+
+            <a-entity id="target-2" mindar-image-target="targetIndex: 2">
+                <a-image id="overlay-2" src="#overlay-image-2" position="0 0 0.01" width="0.70" height="0.90"
+                    visible="false" material="transparent: true; alphaTest: 0.01"></a-image>
+            </a-entity>
+        </a-scene>
+    </div>
+
+    <script>
+        const canvas = document.querySelector("#unity-canvas");
+        const loadingBar = document.querySelector("#unity-loading-bar");
+        const progressBarFull = document.querySelector("#unity-progress-bar-full");
+        const warningBanner = document.querySelector("#unity-warning");
+        const buildUrl = "Build";
+        const loaderUrl = buildUrl + "/{{{ LOADER_FILENAME }}}";
+        const config = {
+            arguments: [],
+            dataUrl: buildUrl + "/{{{ DATA_FILENAME }}}",
+            frameworkUrl: buildUrl + "/{{{ FRAMEWORK_FILENAME }}}",
+            #if USE_THREADS
+            workerUrl: buildUrl + "/{{{ WORKER_FILENAME }}}",
+            #endif
+#if USE_WASM
+            codeUrl: buildUrl + "/{{{ CODE_FILENAME }}}",
+            #endif
+#if MEMORY_FILENAME
+            memoryUrl: buildUrl + "/{{{ MEMORY_FILENAME }}}",
+            #endif
+#if SYMBOLS_FILENAME
+            symbolsUrl: buildUrl + "/{{{ SYMBOLS_FILENAME }}}",
+            #endif
+            streamingAssetsUrl: "StreamingAssets",
+            companyName: {{{ JSON.stringify(COMPANY_NAME) }}},
+        productName: { { { JSON.stringify(PRODUCT_NAME) } } },
+        productVersion: { { { JSON.stringify(PRODUCT_VERSION) } } },
+        showBanner: showUnityBanner
+        };
+
+        function showUnityBanner(message, type) {
+            const item = document.createElement("div");
+            item.textContent = message;
+            item.className = type || "warning";
+            warningBanner.appendChild(item);
+            if (type !== "error") {
+                setTimeout(() => item.remove(), 5000);
+            }
+        }
+
+        let unityLoadStarted = false;
+
+        function loadUnity() {
+            if (unityLoadStarted) return;
+            unityLoadStarted = true;
+
+            const loaderScript = document.createElement("script");
+            loaderScript.src = loaderUrl;
+            loaderScript.onload = () => {
+                createUnityInstance(canvas, config, progress => {
+                    progressBarFull.style.width = (100 * progress) + "%";
+                }).then(unityInstance => {
+                    window.unityGameInstance = unityInstance;
+                    loadingBar.style.display = "none";
+                }).catch(message => {
+                    showUnityBanner(message, "error");
+                    loadingBar.style.display = "none";
+                });
+            };
+            loaderScript.onerror = () => {
+                showUnityBanner("Unity loaderの読み込みに失敗しました。", "error");
+                loadingBar.style.display = "none";
+            };
+            document.body.appendChild(loaderScript);
+        }
+
+        // TensorFlow.jsがWebGLを確保してからUnityを生成します。
+        window.addEventListener("webar-prewarm-ready", loadUnity, { once: true });
+
+        // webar.js自体を読み込めない場合でもUnityだけは起動させます。
+        window.addEventListener("load", () => setTimeout(loadUnity, 3000), { once: true });
+    </script>
+</body>
+
+</html>
