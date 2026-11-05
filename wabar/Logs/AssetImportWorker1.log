@@ -815,3 +815,35 @@ Memory consumption went from 166.6 MB to 163.4 MB.
 Total: 7.041459 ms (FindLiveObjects: 0.594500 ms CreateObjectMapping: 0.202958 ms MarkObjects: 4.636459 ms  DeleteObjects: 1.607250 ms)
 
 Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 254.247069 seconds.
+  path: Assets/Scenes/title.unity
+  artifactKey: Guid(fea603db338e74f748cd05b4ea403354) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/title.unity using Guid(fea603db338e74f748cd05b4ea403354) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd341fd65a9c1dea60b1a818274adb341') in 0.031616042 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/WebARStamp/Samples/WebARSample.unity
+  artifactKey: Guid(b4e4eea9a546fa240ab9d91b6f093a46) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/WebARStamp/Samples/WebARSample.unity using Guid(b4e4eea9a546fa240ab9d91b6f093a46) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bdb393c5dd68547d63acfc60e1fdcb41') in 0.002689 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 47.132340 seconds.
+  path: Assets/images/ChatGPT Image 2026年8月31日 10_58_57.png
+  artifactKey: Guid(33efa1cbdbf3a442f8ed825fe345c7b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/images/ChatGPT Image 2026年8月31日 10_58_57.png using Guid(33efa1cbdbf3a442f8ed825fe345c7b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00ba0137be4d61abd6943203d2ec416c') in 0.062933583 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.988925 seconds.
+  path: Assets/images/ChatGPT Image 2026年8月31日 10_58_57.png
+  artifactKey: Guid(33efa1cbdbf3a442f8ed825fe345c7b0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/images/ChatGPT Image 2026年8月31日 10_58_57.png using Guid(33efa1cbdbf3a442f8ed825fe345c7b0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2db9fc18f6258e2f446336c17c6c54a9') in 0.059607666 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
