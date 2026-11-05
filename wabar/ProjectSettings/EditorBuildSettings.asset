@@ -8,6 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/WebARStamp/Samples/WebARSample.unity
     guid: b4e4eea9a546fa240ab9d91b6f093a46
+  - enabled: 1
+    path: Assets/Scenes/title.unity
+    guid: fea603db338e74f748cd05b4ea403354
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
