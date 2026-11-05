@@ -145,6 +145,8 @@ UnityEngine.Application::get_unityVersionVer
 UnityEngine.Application::OpenURL_Injected
 UnityEngine.Application::get_streamingAssetsPath_Injected
 UnityEngine.Application::get_platform
+UnityEngine.AsyncOperation::InternalDestroy
+UnityEngine.AsyncOperation::InternalSetManagedObject
 UnityEngine.Audio.ScriptableProcessorBindings::CheckProcessorExistsInternal_Injected
 UnityEngine.Awaitable::IsNativeAwaitableCompleted
 UnityEngine.Awaitable::ReleaseNativeAwaitable
@@ -1240,7 +1242,10 @@ UnityEngine.ScalableBufferManager::get_heightScaleFactor
 UnityEngine.ScalableBufferManager::get_widthScaleFactor
 UnityEngine.ScalableBufferManager::ResizeBuffers
 UnityEngine.SceneManagement.Scene::GetGUIDInternal_Injected
+UnityEngine.SceneManagement.SceneManager::get_sceneCount
 UnityEngine.SceneManagement.SceneManager::GetActiveScene_Injected
+UnityEngine.SceneManagement.SceneManager::GetSceneAt_Injected
+UnityEngine.SceneManagement.SceneManagerAPIInternal::LoadSceneAsyncNameIndexInternal_Injected
 UnityEngine.Screen::get_fullScreen
 UnityEngine.Screen::GetMSAASamples
 UnityEngine.Screen::get_height

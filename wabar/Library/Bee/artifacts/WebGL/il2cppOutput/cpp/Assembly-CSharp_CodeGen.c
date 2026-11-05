@@ -7,6 +7,8 @@
 
 
 
+extern void SceneChange_NextScene_m3954000D1E6C5FADBEC81A126A9721359E19295B (void);
+extern void SceneChange__ctor_m4BEE4E939472EAB59441D14F2324EEE353793A1B (void);
 extern void WebARBridge_get_OnMarkerDetectedEvent_m723F06257AA058C2FA448477ED5F948D65FCEFAE (void);
 extern void WebARBridge_StartWebAR_Internal_mE696D546EDC02868A218344561F4EFFA1C1EC221 (void);
 extern void WebARBridge_StartWebAR_mB54CE42FB853A4814FB920D53426C2C53F0147F7 (void);
@@ -17,8 +19,10 @@ extern void WebARSample_OnMarkerDetected_mE18FDEC30C44BB1360E6682B583E14B07E958F
 extern void WebARSample__ctor_mC59D63E753727F185EA9676216FE0E696D49B5BF (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
-static Il2CppMethodPointer s_methodPointers[10] = 
+static Il2CppMethodPointer s_methodPointers[12] = 
 {
+	SceneChange_NextScene_m3954000D1E6C5FADBEC81A126A9721359E19295B,
+	SceneChange__ctor_m4BEE4E939472EAB59441D14F2324EEE353793A1B,
 	WebARBridge_get_OnMarkerDetectedEvent_m723F06257AA058C2FA448477ED5F948D65FCEFAE,
 	WebARBridge_StartWebAR_Internal_mE696D546EDC02868A218344561F4EFFA1C1EC221,
 	WebARBridge_StartWebAR_mB54CE42FB853A4814FB920D53426C2C53F0147F7,
@@ -30,24 +34,26 @@ static Il2CppMethodPointer s_methodPointers[10] =
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 };
-static const int32_t s_InvokerIndices[10] = 
+static const int32_t s_InvokerIndices[12] = 
 {
-	14276,
-	25742,
-	14496,
-	10918,
-	14496,
-	14496,
-	10918,
-	14496,
-	25767,
-	14496,
+	14497,
+	14497,
+	14277,
+	25747,
+	14497,
+	10919,
+	14497,
+	14497,
+	10919,
+	14497,
+	25772,
+	14497,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	10,
+	12,
 	s_methodPointers,
 	0,
 	NULL,
