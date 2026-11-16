@@ -5,7 +5,6 @@
 		<type fullname="WebARSample" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.2D.Animation.Runtime">
-		<type fullname="UnityEngine.U2D.Animation.BufferManager" preserve="nothing"/>
 		<type fullname="UnityEngine.U2D.Animation.DeformationManager" preserve="nothing"/>
 		<type fullname="UnityEngine.U2D.Animation.DeformationManagerUpdater" preserve="nothing"/>
 	</assembly>
