@@ -398,8 +398,7 @@
           {
             "name": "Sprite",
             "scenes": [
-              "Assets/Scenes/title.unity",
-              "Assets/WebARStamp/Samples/WebARSample.unity"
+              "Assets/Scenes/title.unity"
             ],
             "dependencyType": 0,
             "icon": null
