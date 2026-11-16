@@ -7,9 +7,9 @@ Darwin version:          25.5.0
 Architecture:            arm64
 Running under Rosetta:   NO
 Available memory:        18432 MB
-Date:                    2026-11-05T07:55:36Z
+Date:                    2026-11-07T04:41:58Z
 [Licensing::Module] Trying to connect to existing licensing client channel...
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-abe" at "2026-11-05T07:55:36.982416Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-abe" at "2026-11-07T04:41:58.058569Z"
 
 COMMAND LINE ARGUMENTS:
 /Applications/Unity/Hub/Editor/6000.3.14f1/Unity.app/Contents/MacOS/Unity
@@ -23,7 +23,7 @@ AssetImportWorker1
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-59870
+52018
 -licensingIpc
 LicenseClient-abe
 -job-worker-count
@@ -72,7 +72,7 @@ Successfully changed project path to: /Users/abe/GitHub/Green/wabar
     "memorysetup-temp-allocator-size-gfx=262144"
 Player connection [8496176768]  Target information:
 
-Player connection [8496176768]  * "[IP] 172.19.2.51 [Port] 0 [Flags] 2 [Guid] 1169552136 [EditorId] 1169552136 [Version] 1048832 [Id] OSXEditor(0,abenoMacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+Player connection [8496176768]  * "[IP] 192.168.0.154 [Port] 0 [Flags] 2 [Guid] 1933481147 [EditorId] 1933481147 [Version] 1048832 [Id] OSXEditor(0,abenoMacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
 
 Player connection [8496176768] Host joined multi-casting on [225.0.0.222:54997]...
 Player connection [8496176768] Host joined alternative multi-casting on [225.0.0.222:34997]...
@@ -87,7 +87,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 15.66 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 24.74 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.3.14f1 (d68c3f99a318)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/6000.3.14f1/Unity.app/Contents/Resources/UnitySubsystems
@@ -104,21 +104,21 @@ MSL Version: 3.0
 Has Float MSAA: 1
 Has Float Filtering: 1
 ReadWrite Texture Tier: 2
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.3+d7ffd15
+  Session Id:              a91a00250ce74dfc95250c90e8c3b6d8
+  Correlation Id:          b1070257f546ee8a5b378ab50bf351d2
+  External correlation Id: 1903193264231270802
+  Machine Id:              70PzcXXYvKyYMXkgqfMbxHVlMek=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-abe" (connect: 0.00s, validation: 0.00s, handshake: 0.63s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-abe-notifications" at "2026-11-07T04:41:58.691855Z"
+[Licensing::Module] Licensing Background thread has ended after 0.63s
 Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/6000.3.14f1/Unity.app/Contents/Resources/Scripting/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/6000.3.14f1/Unity.app/Contents/Resources/Scripting/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/6000.3.14f1/Unity.app/Contents/Resources/Scripting/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56147
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56477
 Begin MonoManager ReloadAssembly
-[Licensing::Client] Handshaking with LicensingClient:
-  Version:                 1.18.3+d7ffd15
-  Session Id:              5627edbaaca14ba9bdc65c8bfe670a85
-  Correlation Id:          d84243f46687a09151174ec6ac624a02
-  External correlation Id: 2232233562929367422
-  Machine Id:              70PzcXXYvKyYMXkgqfMbxHVlMek=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-abe" (connect: 0.00s, validation: 0.00s, handshake: 0.55s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-abe-notifications" at "2026-11-05T07:55:37.535922Z"
-[Licensing::Module] Licensing Background thread has ended after 0.55s
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/6000.3.14f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/6000.3.14f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
@@ -129,8 +129,8 @@ Register platform support module: /Applications/Unity/Hub/Editor/6000.3.14f1/Uni
   Type: Assigned
   Expiration: Unlimited
 Register platform support module: /Applications/Unity/Hub/Editor/6000.3.14f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
-Registered in 0.000887 seconds.
-- Loaded All Assemblies, in  0.220 seconds
+Registered in 0.003618 seconds.
+- Loaded All Assemblies, in  0.309 seconds
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 [usbmuxd] Send listen message
@@ -143,35 +143,35 @@ Package Manager log level set to [2]
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.263 seconds
-Domain Reload Profiling: 483ms
-	BeginReloadAssembly (53ms)
+- Finished resetting the current domain, in  0.330 seconds
+Domain Reload Profiling: 640ms
+	BeginReloadAssembly (120ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (0ms)
-	RebuildCommonClasses (23ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (24ms)
-	LoadAllAssembliesAndSetupDomain (111ms)
-		LoadAssemblies (53ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (25ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (28ms)
+	LoadAllAssembliesAndSetupDomain (125ms)
+		LoadAssemblies (121ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (109ms)
-			TypeCache.Refresh (107ms)
-				TypeCache.ScanAssembly (97ms)
+		AnalyzeDomain (122ms)
+			TypeCache.Refresh (120ms)
+				TypeCache.ScanAssembly (109ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (263ms)
+	FinalizeReload (332ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (232ms)
+		SetupLoadedEditorAssemblies (284ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (66ms)
+			InitializePlatformSupportModulesInManaged (82ms)
 			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (49ms)
-			ProcessInitializeOnLoadAttributes (71ms)
-			ProcessInitializeOnLoadMethodAttributes (44ms)
+			BeforeProcessingInitializeOnLoad (53ms)
+			ProcessInitializeOnLoadAttributes (73ms)
+			ProcessInitializeOnLoadMethodAttributes (74ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -182,53 +182,53 @@ Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
 [Licensing::Client] Successfully resolved entitlement details
-- Loaded All Assemblies, in  0.479 seconds
-Refreshing native plugins compatible for Editor in 0.82 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.606 seconds
+Refreshing native plugins compatible for Editor in 0.79 ms, found 3 plugins.
 Native extension for iOS target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-Refreshing native plugins compatible for Editor in 0.86 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.87 ms, found 3 plugins.
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.498 seconds
-Domain Reload Profiling: 977ms
-	BeginReloadAssembly (74ms)
+- Finished resetting the current domain, in  0.564 seconds
+Domain Reload Profiling: 1170ms
+	BeginReloadAssembly (86ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (3ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (13ms)
-	RebuildCommonClasses (23ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (18ms)
-	LoadAllAssembliesAndSetupDomain (353ms)
-		LoadAssemblies (224ms)
+		CreateAndSetChildDomain (16ms)
+	RebuildCommonClasses (24ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (19ms)
+	LoadAllAssembliesAndSetupDomain (467ms)
+		LoadAssemblies (329ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (164ms)
-			TypeCache.Refresh (122ms)
-				TypeCache.ScanAssembly (109ms)
-			BuildScriptInfoCaches (32ms)
+		AnalyzeDomain (181ms)
+			TypeCache.Refresh (134ms)
+				TypeCache.ScanAssembly (118ms)
+			BuildScriptInfoCaches (38ms)
 			ResolveRequiredComponents (6ms)
-	FinalizeReload (498ms)
+	FinalizeReload (564ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (412ms)
+		SetupLoadedEditorAssemblies (454ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (9ms)
 			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (105ms)
-			ProcessInitializeOnLoadAttributes (216ms)
-			ProcessInitializeOnLoadMethodAttributes (78ms)
+			BeforeProcessingInitializeOnLoad (110ms)
+			ProcessInitializeOnLoadAttributes (227ms)
+			ProcessInitializeOnLoadMethodAttributes (104ms)
 			AfterProcessingInitializeOnLoad (1ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (1ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
 WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
 WARNING: Shader Did you use #pragma only_renderers and omit this platform?
 WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
@@ -236,19 +236,63 @@ WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wirefr
 WARNING: Shader Did you use #pragma only_renderers and omit this platform?
 WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
 Launching external process: /Applications/Unity/Hub/Editor/6000.3.14f1/Unity.app/Contents/Helpers/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.95 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.90 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7172 unused Assets / (3.7 MB). Loaded Objects now: 7980.
-Memory consumption went from 151.5 MB to 147.8 MB.
-Total: 6.911167 ms (FindLiveObjects: 0.700459 ms CreateObjectMapping: 0.145959 ms MarkObjects: 4.687375 ms  DeleteObjects: 1.377042 ms)
+Unloading 7172 unused Assets / (3.9 MB). Loaded Objects now: 7980.
+Memory consumption went from 151.3 MB to 147.4 MB.
+Total: 7.061917 ms (FindLiveObjects: 0.730750 ms CreateObjectMapping: 0.192792 ms MarkObjects: 4.776208 ms  DeleteObjects: 1.361750 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 129448.651272 seconds.
-  path: Assets/WebARStamp/Samples/WebARSample.unity
-  artifactKey: Guid(b4e4eea9a546fa240ab9d91b6f093a46) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/WebARStamp/Samples/WebARSample.unity using Guid(b4e4eea9a546fa240ab9d91b6f093a46) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f607e663bb7911986ef0ac40797cca66') in 0.022138 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+  Time since last request: 159650.095776 seconds.
+  path: Assets/Scenes/title.unity
+  artifactKey: Guid(fea603db338e74f748cd05b4ea403354) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/title.unity using Guid(fea603db338e74f748cd05b4ea403354) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0dd4940ae59f28fc0ce0939cd934f4d6') in 0.003671958 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 39.439262 seconds.
+  path: 
+  artifactKey: Guid(765f16c03c183473a8596714acae7c7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(765f16c03c183473a8596714acae7c7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000069375 seconds
+Import Error Code:(3)
+Message: Unknown asset with GUID '765f16c03c183473a8596714acae7c7a'
+  ERROR: Unknown asset with GUID '765f16c03c183473a8596714acae7c7a'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004941 seconds.
+  path: 
+  artifactKey: Guid(3a6ddc627af4248e9b214ee36a11e821) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing  using Guid(3a6ddc627af4248e9b214ee36a11e821) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)  -> (artifact id: '00000000000000000000000000000000') in 0.000028083 seconds
+Import Error Code:(3)
+Message: Unknown asset with GUID '3a6ddc627af4248e9b214ee36a11e821'
+  ERROR: Unknown asset with GUID '3a6ddc627af4248e9b214ee36a11e821'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: 
+  artifactKey: Guid(765f16c03c183473a8596714acae7c7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(765f16c03c183473a8596714acae7c7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000031708 seconds
+Import Error Code:(3)
+Message: Unknown asset with GUID '765f16c03c183473a8596714acae7c7a'
+  ERROR: Unknown asset with GUID '765f16c03c183473a8596714acae7c7a'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.421261 seconds.
+  path: 
+  artifactKey: Guid(3a6ddc627af4248e9b214ee36a11e821) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(3a6ddc627af4248e9b214ee36a11e821) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000031042 seconds
+Import Error Code:(3)
+Message: Unknown asset with GUID '3a6ddc627af4248e9b214ee36a11e821'
+  ERROR: Unknown asset with GUID '3a6ddc627af4248e9b214ee36a11e821'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
