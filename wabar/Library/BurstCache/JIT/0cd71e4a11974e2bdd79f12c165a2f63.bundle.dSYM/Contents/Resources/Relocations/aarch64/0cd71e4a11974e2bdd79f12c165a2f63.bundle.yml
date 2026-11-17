@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/abe/GitHub/Green/wabar/Temp/Burst/burst-aotqdbwe47r.yhp/0cd71e4a11974e2bdd79f12c165a2f63.bundle'
+binary-path:     '/Users/abe/GitHub/Green/wabar/Temp/Burst/burst-aotf20x4hxr.fpt/0cd71e4a11974e2bdd79f12c165a2f63.bundle'
 relocations:
   - { offset: 0x1E, size: 0x8, addend: 0x0, symName: '_UnityEngine.U2D.IK.CCD2D.RotatePositionFrom(ref Unity.Mathematics.float2 position, ref Unity.Mathematics.float2 pivot, float s, float c, ref Unity.Mathematics.float2 result) -> void_e64368eec811e031ae0aea213e968286 from Unity.2D.IK.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null', symObjAddr: 0x1D8, symBinAddr: 0x650, symSize: 0x3C }
   - { offset: 0x37, size: 0x8, addend: 0x0, symName: '_UnityEngine.U2D.IK.CCD2D.RotatePositionFrom(ref Unity.Mathematics.float2 position, ref Unity.Mathematics.float2 pivot, float s, float c, ref Unity.Mathematics.float2 result) -> void_e64368eec811e031ae0aea213e968286 from Unity.2D.IK.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null', symObjAddr: 0x1D8, symBinAddr: 0x650, symSize: 0x3C }
