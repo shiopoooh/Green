@@ -139,25 +139,21 @@
             audio: false
           });
 
-          // カメラ映像を表示する要素の作成（全画面固定せず、コンテナ内に配置）
           let video = document.getElementById("ar-video");
           if (!video) {
             video = document.createElement("video");
             video.id = "ar-video";
             video.setAttribute("playsinline", "");
             video.muted = true;
-            // 全画面にせず、Unityのキャンバスサイズ（例: 960x600）に合わせる
             video.style.cssText =
               "width: 960px; height: 600px; object-fit: cover; background: transparent;";
             
-            // Unityコンテナ内にビデオ要素を追加
             const container = document.getElementById("unity-container");
             container.insertBefore(video, container.firstChild);
           }
           video.srcObject = stream;
           await video.play();
 
-          // コンテナやcanvasの全画面化は行わず、背景の透過設定のみ適用
           const container = document.getElementById("unity-container");
           const canvas = document.getElementById("unity-canvas");
 
