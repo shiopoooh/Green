@@ -129,42 +129,75 @@
       document.body.appendChild(script);
 
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image.prod.js"></script>
     <script>
+      window.unityInstance = null;   // createUnityInstance 後に代入する
+
       window.webARStart = async function () {
-        console.log("webARStart called");
         try {
-          // 背面カメラを起動
+          // --- カメラ ---
           const stream = await navigator.mediaDevices.getUserMedia({
-            video: { facingMode: "environment" },
+            video: { facingMode: "environment", width: { ideal: 1280 }, height: { ideal: 720 } },
             audio: false
           });
+          window.arStream = stream;
 
-          let video = document.getElementById("ar-video");
-          if (!video) {
-            video = document.createElement("video");
-            video.id = "ar-video";
-            video.setAttribute("playsinline", "");
-            video.muted = true;
-            video.style.cssText =
-              "width: 960px; height: 600px; object-fit: cover; background: transparent;";
-            
-            const container = document.getElementById("unity-container");
-            container.insertBefore(video, container.firstChild);
-          }
+          const video = document.createElement("video");
+          video.id = "ar-video";
+          video.setAttribute("playsinline", "");
+          video.muted = true;
+          video.style.cssText =
+            "position:fixed; left:0; top:0; width:100vw; height:100vh; object-fit:cover; z-index:0;";
+          document.body.insertBefore(video, document.body.firstChild);
           video.srcObject = stream;
           await video.play();
 
+          // --- Unityを全画面・透明に ---
           const container = document.getElementById("unity-container");
           const canvas = document.getElementById("unity-canvas");
-
-          container.style.background = "transparent";
-          canvas.style.background = "transparent";
+          container.style.cssText =
+            "position:fixed; left:0; top:0; width:100vw; height:100vh; transform:none; background:transparent; z-index:1;";
+          canvas.style.cssText =
+            "position:absolute; left:0; top:0; width:100vw; height:100vh; background:transparent; z-index:1;";
           document.body.style.background = "transparent";
+          const footer = document.getElementById("unity-footer");
+          if (footer) footer.style.display = "none";
 
-          console.log("AR camera started");
+          // --- MindAR ---
+          const controller = new window.MINDAR.IMAGE.Controller({
+            inputWidth: video.videoWidth,
+            inputHeight: video.videoHeight,
+            maxTrack: 1,
+            onUpdate: (data) => {
+              if (data.type !== "updateMatrix" || !window.unityInstance) return;
+              const { targetIndex, worldMatrix } = data;
+              if (worldMatrix === null) {
+                window.unityInstance.SendMessage("ARReceiver", "OnTargetLost", targetIndex);
+              } else {
+                window.unityInstance.SendMessage(
+                  "ARReceiver", "OnTargetUpdate",
+                  targetIndex + "|" + worldMatrix.join(",")
+                );
+              }
+            }
+          });
+
+          const { dimensions } = await controller.addImageTargets("targets/target.mind");
+          // 各ターゲットの [幅, 高さ] をUnityに渡す
+          window.unityInstance.SendMessage("ARReceiver", "OnTargetsLoaded", JSON.stringify(dimensions));
+
+          // カメラ投影行列をUnityに渡す
+          await controller.dummyRun(video);
+          const proj = controller.getProjectionMatrix();
+          window.unityInstance.SendMessage(
+            "ARReceiver", "OnProjection", proj.join(",") + "|" + window.innerWidth + "|" + window.innerHeight
+          );
+
+          controller.processVideo(video);
+          console.log("MindAR started");
         } catch (e) {
-          console.error("カメラ起動に失敗:", e);
-          alert("カメラを起動できませんでした: " + e.message);
+          console.error("AR開始に失敗:", e);
+          alert("AR開始に失敗: " + e.message);
         }
       };
     </script>
