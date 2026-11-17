@@ -853,8 +853,7 @@
             "fullManagedTypeName": "UnityEngine.Sprite",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/title.unity",
-                "Assets/WebARStamp/Samples/WebARSample.unity"
+                "Assets/Scenes/title.unity"
             ]
         },
         {
@@ -896,13 +895,6 @@
                 "Assets/Scenes/title.unity",
                 "Assets/WebARStamp/Samples/WebARSample.unity"
             ]
-        },
-        {
-            "managedAssemblyName": "Unity.2D.Animation.Runtime.dll",
-            "nativeClass": "",
-            "fullManagedTypeName": "UnityEngine.U2D.Animation.BufferManager",
-            "moduleName": "",
-            "usedInScenes": []
         },
         {
             "managedAssemblyName": "Unity.2D.Animation.Runtime.dll",
